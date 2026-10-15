@@ -3,16 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="2fe2f847575740d83be2edec938ca10a083db026" content="2fe2f847575740d83be2edec938ca10a083db026" />
+    <meta name="google-adsense-account" content="ca-pub-2853919516364773" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pingwyd</title>
-    <script>setTimeout(function () { location.replace('/era-draw/'); }, 1500);</script>
+    <meta name="description" content="Pingwyd makes small, free browser games: Era Draw, a drawing survival roguelite, and Chess Uno, chess where a card decides how many moves you make." />
+    <title>Pingwyd: small, free browser games</title>
+    <style>
+      :root{--ink:#16120f;--paper:#f3efe6;--rule:#d8d0c0;--mute:#6b6257;--accent:#b8382f}
+      *{box-sizing:border-box}
+      body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+      a{color:inherit}
+      .wrap{max-width:920px;margin:0 auto;padding:48px 24px 64px}
+      header{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:32px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+      .mast{font-size:clamp(34px,6vw,56px);letter-spacing:-.02em;margin:0;line-height:1}
+      .kick{font:600 12px/1.4 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+      .lede{font-size:clamp(19px,2.4vw,23px);max-width:40em;margin:0 0 36px}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:44px}
+      .card{border:1px solid var(--rule);background:#fbf8f2;padding:22px 22px 20px;display:flex;flex-direction:column}
+      .card h2{margin:6px 0 8px;font-size:28px;line-height:1.1}
+      .card p{margin:0 0 14px;flex:1}
+      .card ul{margin:0 0 18px;padding-left:18px;color:var(--mute);font-size:15px}
+      .play{align-self:flex-start;font:700 14px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;background:var(--ink);color:var(--paper);padding:12px 16px}
+      .play:hover,.play:focus{background:var(--accent)}
+      section{border-top:1px solid var(--rule);padding-top:20px;margin-top:8px}
+      section h3{font:600 12px/1.4 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:0 0 8px}
+      footer{margin-top:44px;border-top:2px solid var(--ink);padding-top:14px;font:14px/1.5 system-ui,sans-serif;color:var(--mute);display:flex;gap:18px;flex-wrap:wrap}
+    </style>
   </head>
-  <body style="font-family: system-ui, sans-serif; background: #f3f2ee; color: #111; display: grid; place-items: center; min-height: 100vh; margin: 0;">
-    <main style="text-align: center;">
-      <h1>Pingwyd</h1>
-      <p><a href="/era-draw/" style="color: #111; font-weight: 700;">Play Era Draw</a></p>
-      <p><a href="/chess-uno/" style="color: #111; font-weight: 700;">Play Chess UNO</a></p>
-    </main>
+  <body>
+    <div class="wrap">
+      <header><h1 class="mast">Pingwyd</h1><span class="kick">Small, free browser games</span></header>
+      <p class="lede">Pingwyd is a one-person studio making short, replayable games that run in your browser: no download, no account, playable on phone, tablet or desktop, and offline once loaded.</p>
+      <div class="grid">
+        <article class="card">
+          <span class="kick">Roguelite &middot; Drawing</span>
+          <h2>Era Draw</h2>
+          <p>Survive waves of creatures through the ages by <em>drawing</em> your weapons: a short line becomes a club, a long line a spear, a circle a rock. Level up, combine skills, and defeat each era's bosses to move from the Stone Age to myth.</p>
+          <ul><li>Four eras, sixteen bosses, daily challenge</li><li>Touch, mouse, keyboard and controller</li><li>Local co-op over LAN</li></ul>
+          <a class="play" href="/era-draw/">Play Era Draw</a>
+        </article>
+        <article class="card">
+          <span class="kick">Strategy &middot; Chess variant</span>
+          <h2>Chess Uno</h2>
+          <p>Chess where a card decides how many moves you make. Draw from the deck each turn and plan around the luck: one move, a double, or a sudden flurry can turn the board.</p>
+          <ul><li>Familiar chess rules, new tempo</li><li>Quick games, easy to learn</li></ul>
+          <a class="play" href="/chess-uno/">Play Chess Uno</a>
+        </article>
+      </div>
+      <section>
+        <h3>About</h3>
+        <p>Every game here is free to play and built with plain web technology so it loads fast and works on modest devices. Progress is saved on your own device. Some games show optional ads (only if you allow them) to keep everything free.</p>
+      </section>
+      <section>
+        <h3>Privacy</h3>
+        <p>We don't run accounts or collect personal data on our own servers. Ads and any optional analytics only load after you consent inside each game. Read the full <a href="/era-draw/#/privacy">privacy &amp; terms</a>.</p>
+      </section>
+      <footer><span>&copy; 2026 Pingwyd</span><a href="/era-draw/">Era Draw</a><a href="/chess-uno/">Chess Uno</a><a href="/era-draw/#/privacy">Privacy</a><a href="/ads.txt">ads.txt</a></footer>
+    </div>
   </body>
 </html>
